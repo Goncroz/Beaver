@@ -10,6 +10,6 @@ import com.beaver.beaver.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>
 {
-	public List<Categoria> findAllbyNomeContainingIgnoreCase (String nome);
+	public List<Categoria> findAllByNomeContainingIgnoreCase (String nome);
 
 }
