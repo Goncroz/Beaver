@@ -8,8 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.beaver.beaver.model.Produto;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository<Produto, Long>
-{
-	public List<Produto> findAllByClassificacaoContainingIgnoreCase (String classificacao);
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
+	public List<Produto> findAllByClassificacaoContainingIgnoreCase(String classificacao);
 }

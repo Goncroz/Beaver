@@ -22,7 +22,7 @@ public class Produto
 	private Long id;
 	
 	@NotNull
-	private String Classificacao;
+	private String classificacao;
 	
 	@OneToMany(mappedBy = "produto", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("produto")
@@ -37,11 +37,11 @@ public class Produto
 	}
 
 	public String getClassificacao() {
-		return Classificacao;
+		return classificacao;
 	}
 
 	public void setClassificacao(String classificacao) {
-		Classificacao = classificacao;
+		classificacao = classificacao;
 	}
 
 	public List<Categoria> getCategoria() {
